@@ -5,9 +5,9 @@ RUN pip3 install flask
 RUN yum -y install git
 
 
-WORKDIR /puts2
+WORKDIR /webserver-docker
 
-COPY . /puts
+COPY . /webserver-docker
 EXPOSE 4080
 
 ENTRYPOINT ["python3"]
